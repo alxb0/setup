@@ -1,0 +1,84 @@
+# Setup machine
+
+sudo apt-get update
+sudo apt-get upgrade
+
+mkdir work
+cd work
+nc -l 4242 > backup (nc <ip> 4242 < backup)
+
+sudo apt-get install vim
+sudo apt-get install i3
+sudo apt-get install git
+git config --global push.default simple
+git config --global user.email "etienne.castanie@gmail.com"
+git config --global user.name "Etienne Castanié"
+
+ssh-keygen -t rsa -b 4096 -C "etienne.castanie@gmail.com"
+
+installer chrome (sur le site de chrome)
+
+installer slack (package .deb sur le site de slack)
+install skype
+sudo dpkg -i *.deb (pour chaque paquet .deb telecharge)
+
+bindsym $mod+Return exec xterm (penser à virer le doublon avant)
+bindsym $mod+Control+l exec i3lock -c 000000
+
+xinput set-prop 13 "Device Enabled" 0
+
+/etc/i3status.conf  (pour supprimer les secondes)
+
+(tray_output none pour virer les tray)
+
+i3-msg restart (restart i3 avec les nouvelles configs)
+
+
+export PATH="/home/etienne/work/embedded/gcc-arm-none-eabi-4_9-2015q1/bin:$PATH"
+source .bashrc	
+
+dans le .vimrc :
+set nobackup
+set nowritebackup
+set noswapfile
+
+sudo update-alternatives --config x-www-browser
+
+sudo apt-get install p7zip-full
+sudo apt-get install gimp
+sudo apt-get install gitk
+sudo apt-get install minicom
+sudo adduser etienne dialout
+sudo apt-get install lib32z1
+sudo apt-get install libusb-1.0.0-dev
+sudo apt-get install pkg-config autotools-dev
+sudo apt-get install lib32ncurses5
+sudo apt-get install autoconf
+
+sudo apt-get install meld
+sudo apt-get install git-gui
+git config --global core.editor "vim"
+
+
+ln -s /home/etienne/work/setup/i3/config /home/etienne/.i3/config
+ln -s /home/etienne/work/setup/bashrc/.bashrc /home/etienne/.bashrc
+ln -s /home/etienne/work/setup/vim/.vimrc /home/etienne/.vimrc
+ln -s /home/etienne/work/setup/xterm/.Xresources /home/etienne/.Xresources
+sudo ln -s /home/etienne/work/setup/i3/i3status.conf /etc/i3status.conf
+
+
+sudo apt-get install xfonts-terminus
+
+xrdb ~/.Xresources
+
+xrandr --output HDMI1 --auto // allumer un moniteur
+xrandr --output HDMI1 --off // eteindre un moniteur
+xrandr --output HDMI1 --above eDP1
+xrandr --output HDMI1 --left-of eDP1
+xrandr --output HDMI1 --right-of eDP1
+
+sudo apt-get install feh
+feh  -bg-scale /home/toto/wallpaper.png
+
+nmcli dev wifi list // liste des reseaux wifi
+nmcli dev wifi connect <ssid> password <pwd> // se connecter a un reseeau

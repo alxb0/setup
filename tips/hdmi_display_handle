@@ -1,0 +1,22 @@
+#! /bin/sh
+#exec >/home/etienne/toto.out 2>&1
+
+export XAUTHORITY=/home/etienne/.Xauthority
+export DISPLAY=:0
+
+status="$(cat /sys/class/drm/card0-HDMI-A-1/status)"
+
+echo $status
+
+if [ $status = "connected" ]
+then
+  echo "Connected"
+  /usr/bin/xrandr --output HDMI1 --auto
+  /usr/bin/xrandr --output HDMI1 --above eDP1
+
+elif [ $status = "disconnected" ]
+then
+  echo "Disconnected"
+  /usr/bin/xrandr --output HDMI1 --auto
+  /usr/bin/xrandr --output HDMI1 --off
+fi

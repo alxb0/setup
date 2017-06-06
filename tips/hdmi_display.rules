@@ -1,0 +1,1 @@
+SUBSYSTEM=="drm", ACTION=="change", RUN+="/home/etienne/work/setup/display/hdmi_display_handle"
