@@ -151,7 +151,7 @@ bar {
 assign [class="google-chrome"] 1
 #assign [class="Skype"] 10a
 
-exec google-chrome
+exec google-chrome-stable
 #exec skype
 
 #bindsym $mod+c exec /home/etienne/work/setup/display/hdmi_display_handle
