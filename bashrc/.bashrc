@@ -95,6 +95,7 @@ alias l='ls -CF'
 alias wifi_on='nmcli radio wifi on'
 alias wifi_off='nmcli radio wifi off'
 
+alias shutdown='shutdown -t now'
 alias touchpad_disable='xinput set-prop 13 "Device Enabled" 0'
 alias touchpad_enable='xinput set-prop 13 "Device Enabled" 1'
 alias make='make -j8'
