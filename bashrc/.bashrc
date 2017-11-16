@@ -110,6 +110,7 @@ alias cdq='cd /home/alex/Documents/qivivo/embedded_v2/tools/qsflash/'
 alias cdt='cd /home/alex/Documents/qivivo/embedded_v2/product/th/'
 alias cdg='cd /home/alex/Documents/qivivo/embedded_v2/product/gw/'
 alias cdw='cd /home/alex/Documents/qivivo/embedded_v2/product/wm/'
+alias cdr='cd /home/alex/Documents/qivivo/embedded_v2/tools/rv_debug/'
 alias logout='kill -9 -1'
 alias reload_xresources='xrdb ~/.Xresources'
 # Add an "alert" alias for long running commands.  Use like so:
