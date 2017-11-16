@@ -8,6 +8,7 @@ sudo apt-get dist-upgrade -y
 
 sudo apt-get install google-chrome-stable -y
 sudo apt-get install vim -y
+sudo apt-get install cmake -y
 sudo apt-get install i3 -y
 sudo apt-get install p7zip-full -y
 sudo apt-get install gimp -y
