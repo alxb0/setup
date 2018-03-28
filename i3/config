@@ -146,5 +146,5 @@ assign [class="Eclipse"] →  2
 exec --no-startup-id i3-msg 'workspace 3; exec xterm'
 
 exec --no-startup-id google-chrome-stable
-exec --no-startup-id eclipse
+exec --no-startup-id atom
 
