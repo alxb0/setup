@@ -142,7 +142,7 @@ workspace 2 output DVI-I-1
 workspace 3 output VGA-1
 
 assign [class="Google-chrome"] → 1
-assign [class="Eclipse"] →  2
+assign [class="atom"] →  2
 exec --no-startup-id i3-msg 'workspace 3; exec xterm'
 
 exec --no-startup-id google-chrome-stable
